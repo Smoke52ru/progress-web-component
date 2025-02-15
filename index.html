@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Progress App</title>
+    <script src="/src/components/Progress" defer></script>
+    <script src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <span id="title">Progress</span>
+    <div class="block progress">
+        <progress-circle></progress-circle>
+    </div>
+    <div class="block" id="controls">
+        <input type="text" id="value" maxlength="3" autocomplete="off"/>
+        <label for="value">
+            Value
+        </label>
+
+        <label class="switch">
+            <input type="checkbox" id="animate"/>
+            <span class="slider"></span>
+        </label>
+        <label for="animate">Animate</label>
+
+        <label class="switch">
+            <input type="checkbox" id="hide"/>
+            <span class="slider"></span>
+        </label>
+        <label for="hide">Hide</label>
+    </div>
+</div>
+</body>
+</html>
