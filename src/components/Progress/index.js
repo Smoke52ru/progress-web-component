@@ -39,16 +39,9 @@ class ProgressCircle extends HTMLElement {
     }
 
     render() {
-        console.log('render', this.animated, this.hide)
-        // const progressClassList = `progress-circle${
-        //     this.animated ? ' animated' : ''
-        // }${
-        //     this.hide ? ' hide' : ''
-        // }`
         let progressClassList = 'progress-circle'
         this.animated && (progressClassList += ' animated')
         this.hide && (progressClassList += ' hide')
-        console.log(progressClassList)
 
         this.shadowRoot.innerHTML = `
             <style>
