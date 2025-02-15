@@ -18,13 +18,11 @@ const animateInput = document.querySelector('input#animate')
 
 animateInput.addEventListener('change', (e) => {
     const value = e.target.checked
-    console.log('event', value)
     progressComponent.toggleAttribute('animated', value)
 })
 
 const hideInput = document.querySelector('input#hide')
 hideInput.addEventListener('change', (e) => {
     const value = e.target.checked
-    console.log('event', value)
     progressComponent.toggleAttribute('hide', value)
 })
